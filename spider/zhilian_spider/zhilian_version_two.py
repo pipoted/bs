@@ -4,6 +4,7 @@
 from gevent import monkey
 
 monkey.patch_all()
+import gevent
 import requests
 import json
 import re
@@ -22,12 +23,12 @@ def generate_url_list(base_url: str, kw_list: list, salary_list: list, url_list)
 def get_msg_data(url, data_list):
     content = requests.get(url).content
     kw = re.findall('&kw=(.*?)&', url)[0]
-    print(len(content))
+    print('this url', url)
 
     try:
         data = json.loads(content)
-    except BaseException:
-        print('error out')
+    except BaseException as e:
+        print('error out', e)
         return
 
     data_dict = data['data']['results']
@@ -102,17 +103,23 @@ if __name__ == '__main__':
     pool = Pool(10)
 
     generate_url_list(url, kw_list, salary_list, url_list)
-    for url in url_list:
-        print('start url', url)
-        start_spider_url(url, data_list)
+    # for url in url_list:
+    #     print('start url', url)
+    #     start_spider_url(url, data_list)
 
-    for data_dict in data_list:
-        get_msg(data_dict, msg_list)
+    gevent.joinall([gevent.spawn(start_spider_url, url, data_list) for url in url_list])
+
+    # for data_dict in data_list:
+    #     get_msg(data_dict, msg_list)
+
+    gevent.joinall([gevent.spawn(get_msg, data_dict, msg_list) for data_dict in data_list])
 
     print(len(url_list), 'url list')
     print(len(data_list), 'data list')
     print(len(msg_list), 'msg list')
 
     print('start saving')
-    for msg in msg_list:
-        save_to_sql(msg)
+    # for msg in msg_list:
+    #     save_to_sql(msg)
+
+    pool.map(save_to_sql, msg_list)
