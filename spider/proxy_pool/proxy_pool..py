@@ -18,7 +18,7 @@ class Dynamic_Proxy_Pool:
     """
 
     def __init__(self):
-        self.proxy_queue = queue.Queue(maxsize=100)
+        self.proxy_queue = queue.Queue(maxsize=20)
         self.pool = pool.Pool(3)
 
     def __next__(self):
@@ -79,7 +79,7 @@ class Dynamic_Proxy_Pool:
                 return
 
     def return_useful_proxy(self):
-        if self.proxy_queue.qsize() > 90:
+        if self.proxy_queue.qsize() > 10:
             proxy = self.proxy_queue.get()
             proxy_dict = {
                 'http': proxy,
@@ -92,9 +92,8 @@ class Dynamic_Proxy_Pool:
             self.loop_spider_proxy()
             self.return_useful_proxy()
 
-    useful_proxy = return_useful_proxy()
 
 
 if __name__ == '__main__':
     proxy = Dynamic_Proxy_Pool()
-    print(proxy.useful_proxy)
+    print(proxy.return_useful_proxy())
