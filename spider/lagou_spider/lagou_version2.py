@@ -2,40 +2,52 @@
 # -*- coding: utf-8 -*-
 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from lxml import etree
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 
-url = 'https://www.lagou.com/jobs/list_python%E7%88%AC%E8%99%AB?px=default&city=%E5%85%A8%E5%9B%BD'
-browser = webdriver.Chrome()
-browser.get(url)
-
-content = browser.page_source
-tree = etree.HTML(content)
-lis = tree.xpath('//div[@class="s_position_list "]/ul/li')
-
-# for li in lis:
-#     job = li.xpath('.//a[@class="position_link"]/h3/text()')[0].strip()
-#     money = li.xpath('.//span[@class="money"]/text()')[0].strip()
-#     need = li.xpath('.//div[@class="li_b_l"]/text()')[2].strip()
-#     company = li.xpath('.//div[@class="company_name"]/a/text()')[0].strip()
-#     meg_dict = {
-#         'job': job,
-#         'money': money,
-#         'need': need,
-#         'company': company,
-#     }
-#     print(meg_dict)
-#     break
-
-content_list = []
-try:
+def get_data(url_temp, con_list, browser):
+    browser.get(url_temp)
     while True:
-        time.sleep(0.5)
-        browser.find_element_by_class_name('pager_next ').click()
+        time.sleep(7)
+        print('over wait', url_temp)
+        browser.implicitly_wait(50)
+        try:
+            browser.find_element_by_class_name('pager_next ').click()
+            print('click success')
+        except:
+            continue
         content = browser.page_source
-        content_list.append(content)
-except:
-    time.sleep(15)
-finally:
+        print(content)
+        tree = etree.HTML(content)
+        next_page = tree.xpath('//span[@class="pager_next pager_next_disabled"]')
+        if next_page:
+            break
+        con_list.append(content)
     browser.close()
+
+
+if __name__ == '__main__':
+    options = Options()
+    options.add_argument('--headless')
+    browser = webdriver.Chrome(options=options)
+    content_list = []
+    kw_list = ['java', 'python', 'c', 'c++', 'php']
+    city_list = ['北京', '上海', '广州', '深圳']
+    kd_list = []
+    for kw in kw_list:
+        for city in city_list:
+            kd_list.append((kw, city))
+    content_list = []
+
+    url = 'https://www.lagou.com/jobs/list_{}?city={}&cl=false&fromSearch=true&labelWords=&suginput='
+    url_list = [url.format(kw, city) for kw, city in kd_list]
+
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        for url in url_list:
+            executor.submit(get_data, url, content_list, browser)
+
+    browser.quit()
+    print(len(content_list))
