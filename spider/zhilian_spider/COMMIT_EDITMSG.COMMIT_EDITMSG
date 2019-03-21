@@ -1,0 +1,15 @@
+智联爬虫单线程完成，可以根据关键字列表进行爬取
+requests + mysql
+
+# --------------
+# Please enter the commit message for your changes. Everything below
+# this paragraph is ignored, and an empty message aborts the commit.
+# Just close the window to accept your message.
+diff --git a/spider/zhilian_spider/zhilian_version_two.py b/spider/zhilian_spider/zhilian_version_two.py
+new file mode 100644
+index 0000000..faa18be
+--- /dev/null
++++ b/spider/zhilian_spider/zhilian_version_two.py
+@@ -0,0 +1,2 @@
++#!/usr/bin/env python
++# -*- coding: utf-8 -*-
