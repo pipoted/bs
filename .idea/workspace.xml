@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="拉钩单线程爬虫实现完成">
-      <change beforePath="$PROJECT_DIR$/spider/zhilian_spider/zhilian_finally_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/zhilian_spider/zhilian_finally_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/51job_spider/51job_final_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +17,14 @@
     <SUITE FILE_PATH="coverage/bs$test.coverage" NAME="test Coverage Results" MODIFIED="1553151327811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bs$lagou_version2.coverage" NAME="lagou_version2 Coverage Results" MODIFIED="1553156603706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lagou_spider" />
     <SUITE FILE_PATH="coverage/bs$proxy_pool_.coverage" NAME="proxy_pool. Coverage Results" MODIFIED="1552722384137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
+    <SUITE FILE_PATH="coverage/bs$proxy_poo_version_two.coverage" NAME="proxy_poo_version_two Coverage Results" MODIFIED="1553232407206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
     <SUITE FILE_PATH="coverage/bs$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1552708066896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bs$zhilian_version_three.coverage" NAME="zhilian_version_three Coverage Results" MODIFIED="1552648834342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/zhilian_spider" />
     <SUITE FILE_PATH="coverage/bs$boss_version_one.coverage" NAME="boss_version_one Coverage Results" MODIFIED="1553160575515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/boss_spider" />
+    <SUITE FILE_PATH="coverage/bs$51job_final_version.coverage" NAME="51job_final_version Coverage Results" MODIFIED="1553227753391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/51job_spider" />
     <SUITE FILE_PATH="coverage/bs$51job_spider_version_.coverage" NAME="51job_spider_version. Coverage Results" MODIFIED="1552988628673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/51job_spider" />
-    <SUITE FILE_PATH="coverage/bs$proxy_pool.coverage" NAME="proxy_pool Coverage Results" MODIFIED="1553070120002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
     <SUITE FILE_PATH="coverage/bs$zhilian_finally_version.coverage" NAME="zhilian_finally_version Coverage Results" MODIFIED="1553226943927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/zhilian_spider" />
+    <SUITE FILE_PATH="coverage/bs$proxy_pool.coverage" NAME="proxy_pool Coverage Results" MODIFIED="1553228512143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
     <SUITE FILE_PATH="coverage/bs$51job_test_.coverage" NAME="51job_test. Coverage Results" MODIFIED="1552963905013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/51job_spider" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -43,21 +48,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="53768" />
+          <entry key="py" value="54259" />
           <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="53768" />
+          <entry key="Python" value="54259" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="40" />
+          <entry key="py" value="45" />
           <entry key="pyi" value="1" />
         </counts>
       </usages-collector>
@@ -65,7 +70,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="Python" value="40" />
+          <entry key="Python" value="45" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
@@ -74,40 +79,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spider/zhilian_spider/zhilian_finally_version.py">
+        <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="-1185">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#93#108#0" expanded="true" />
+                <element signature="e#98#113#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.7/site-packages/requests/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="896" selection-start-line="896" selection-end-line="896" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="347" selection-start-line="347" selection-end-line="347" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/decoder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="354" selection-start-line="354" selection-end-line="354" />
             </state>
           </provider>
         </entry>
@@ -118,8 +96,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="python file" />
-        <option value="my python file" />
         <option value="Python Script" />
+        <option value="my python file" />
       </list>
     </option>
   </component>
@@ -150,11 +128,13 @@
         <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool..py" />
         <option value="$PROJECT_DIR$/spider/51job_spider/51job_test..py" />
         <option value="$PROJECT_DIR$/spider/51job_spider/51job_spider_version..py" />
-        <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/spider/lagou_spider/lagou_version2.py" />
         <option value="$PROJECT_DIR$/spider/boss_spider/boss_version_one.py" />
         <option value="$PROJECT_DIR$/spider/zhilian_spider/zhilian_finally_version.py" />
+        <option value="$PROJECT_DIR$/spider/51job_spider/51job_final_version.py" />
+        <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" />
+        <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" />
       </list>
     </option>
   </component>
@@ -186,13 +166,7 @@
               <item name="bs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bs" type="462c0819:PsiDirectoryNode" />
               <item name="spider" type="462c0819:PsiDirectoryNode" />
-              <item name="boss_spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bs" type="462c0819:PsiDirectoryNode" />
-              <item name="spider" type="462c0819:PsiDirectoryNode" />
-              <item name="zhilian_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy_pool" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +176,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="proxy&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/proxy_pool/proxy_pool.py&#10;boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -227,7 +201,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.zhilian_finally_version">
+  <component name="RunManager" selected="Python.proxy_poo_version_two">
+    <configuration name="51job_final_version" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="bs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/51job_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/51job_spider/51job_final_version.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="boss_version_one" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,7 +246,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lagou_version2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="proxy_poo_version_two" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,12 +254,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/lagou_spider" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/proxy_pool" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/lagou_spider/lagou_version2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -286,28 +282,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="bs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -339,19 +313,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.lagou_version2" />
-      <item itemvalue="Python.proxy_pool" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.boss_version_one" />
       <item itemvalue="Python.zhilian_finally_version" />
+      <item itemvalue="Python.51job_final_version" />
+      <item itemvalue="Python.proxy_pool" />
+      <item itemvalue="Python.proxy_poo_version_two" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.proxy_poo_version_two" />
+        <item itemvalue="Python.proxy_pool" />
+        <item itemvalue="Python.51job_final_version" />
         <item itemvalue="Python.zhilian_finally_version" />
         <item itemvalue="Python.boss_version_one" />
-        <item itemvalue="Python.lagou_version2" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.proxy_pool" />
       </list>
     </recent_temporary>
   </component>
@@ -454,13 +428,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="3" sideWeight="0.73179615" weight="0.23819445" />
       <window_info id="Python Console" order="4" sideWeight="0.38802394" side_tool="true" weight="0.37986112" />
-      <window_info active="true" id="Run" order="5" sideWeight="0.87742716" visible="true" weight="0.35069445" />
+      <window_info id="Run" order="5" sideWeight="0.87742716" visible="true" weight="0.35069445" />
       <window_info id="Structure" order="6" sideWeight="0.12257282" side_tool="true" weight="0.27708334" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3288835" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3288835" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39684466" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39684466" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -546,6 +520,171 @@
           <line>101</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -574,20 +713,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/lagou_spider/lagou_version1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/lagou_spider/test_ver3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -744,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -786,6 +904,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,12 +993,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spider/51job_spider/51job_final_version.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spider/zhilian_spider/zhilian_finally_version.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="23">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
             <element signature="e#93#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <element signature="e#67#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943126/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="3674" column="8" selection-start-line="3674" selection-start-column="8" selection-end-line="3674" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1185">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#98#113#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -54,7 +54,7 @@ class Dynamic_Proxy_Pool:
             speed = int(re.findall('.*?(\d+)%', speed)[0])
             time_temp = tr.xpath('.//td[8]/div/div/@style')[0]
             time = int(re.findall('.*?(\d+)%', time_temp)[0])
-            if len(self.proxy_list) < 20:
+            if len(self.proxy_list) < 2:
                 proxy = '%s://%s:%s' % (types, ip, port)
                 proxy_dict = {
                     'http': proxy,
@@ -72,12 +72,11 @@ class Dynamic_Proxy_Pool:
             try:
                 self.get_proxy_dict(url)
                 page += 1
-                time.sleep(5)
             except OverflowError:
                 return
 
     def return_useful_proxy(self):
-        if len(self.proxy_list) > 1:
+        if len(self.proxy_list) == 1:
             proxy_dict = self.proxy_list.pop()
             if not self.ip_test(proxy_dict):
                 return proxy_dict
@@ -90,6 +89,5 @@ class Dynamic_Proxy_Pool:
 
 
 if __name__ == '__main__':
-    test_list = []
     proxy = Dynamic_Proxy_Pool()
     print(proxy.return_useful_proxy())
