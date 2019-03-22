@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="拉钩单线程爬虫实现完成">
       <change afterPath="$PROJECT_DIR$/spider/51job_spider/51job_final_version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" afterDir="false" />
     </list>
