@@ -7,7 +7,6 @@ from lxml import etree
 
 from multiprocessing import Queue
 
-
 def create_browser_obj(url):
     browser = webdriver.Chrome()
     browser.get(url)

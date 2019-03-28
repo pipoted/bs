@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="拉钩单线程爬虫实现完成">
-      <change afterPath="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/all_spider/boss_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/51job_spider/51job_spider_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/51job_spider/51job_spider_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/lagou_spider/lagou_version1.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/lagou_spider/lagou_version1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,38 +26,39 @@
     <SUITE FILE_PATH="coverage/bs$51job_test_.coverage" NAME="51job_test. Coverage Results" MODIFIED="1552963905013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/51job_spider" />
     <SUITE FILE_PATH="coverage/bs$proxy_pool_.coverage" NAME="proxy_pool. Coverage Results" MODIFIED="1552722384137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
     <SUITE FILE_PATH="coverage/bs$zhilian_version_three.coverage" NAME="zhilian_version_three Coverage Results" MODIFIED="1552648834342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/zhilian_spider" />
-    <SUITE FILE_PATH="coverage/bs$51_job_spider.coverage" NAME="51_job_spider Coverage Results" MODIFIED="1553620198797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/all_spider" />
+    <SUITE FILE_PATH="coverage/bs$51_job_spider.coverage" NAME="51_job_spider Coverage Results" MODIFIED="1553708978115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/all_spider" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1772376280">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="56462" />
+          <entry key="py" value="56674" />
           <entry key="txt" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="107" />
-          <entry key="Python" value="56462" />
+          <entry key="Python" value="56674" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,14 +67,14 @@
           <entry key="jpg" value="1" />
           <entry key="py" value="49" />
           <entry key="pyi" value="1" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="49" />
           <entry key="PythonStub" value="1" />
         </counts>
@@ -85,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
+            <state relative-caret-position="1357">
               <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
               <folding>
                 <element signature="e#98#113#0" expanded="true" />
@@ -97,21 +98,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding>
-                <element signature="e#97#112#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spider/all_spider/51job_log.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1801" />
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spider/all_spider/boss_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/spider/51job_spider/51job_final_version.py" />
         <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" />
         <option value="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" />
-        <option value="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" />
         <option value="$PROJECT_DIR$/spider/all_spider/boss_spider.py" />
+        <option value="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" />
       </list>
     </option>
   </component>
@@ -466,7 +466,7 @@
       <window_info id="TODO" order="0" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Terminal" order="1" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.73179615" visible="true" weight="0.23782235" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.73179615" visible="true" weight="0.24140401" />
       <window_info id="Python Console" order="4" sideWeight="0.38802394" side_tool="true" weight="0.37986112" />
       <window_info id="Run" order="5" sideWeight="0.87742716" weight="0.35028654" />
       <window_info id="Structure" order="6" sideWeight="0.12257282" side_tool="true" weight="0.27708334" />
@@ -727,53 +727,88 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>123</line>
+          <line>144</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>175</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>169</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>121</line>
+          <line>142</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>122</line>
+          <line>143</line>
           <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>185</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>167</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>186</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -961,9 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,16 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-          <folding>
-            <element signature="e#98#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1105,24 +1127,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py">
+    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="1357">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding>
-            <element signature="e#97#112#0" expanded="true" />
+            <element signature="e#98#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/all_spider/51job_log.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/all_spider/boss_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/all_spider/51job_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1801" />
       </provider>
     </entry>
   </component>

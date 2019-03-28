@@ -8,7 +8,6 @@ import time
 import pymysql
 import gevent
 from multiprocessing import Manager
-from concurrent.futures import ThreadPoolExecutor
 from lxml import etree
 
 
