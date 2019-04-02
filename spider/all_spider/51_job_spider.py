@@ -7,7 +7,6 @@ import requests
 import re
 import time
 import pymysql
-import gevent
 from datetime import datetime
 from lxml import etree
 
@@ -17,7 +16,8 @@ def log(func):
 
     def inner(*args, **kwargs):
         print(func.__name__, 'is running', datetime.now())
-        msg = str(datetime.now()) + '\t' + func.__name__ + '\t' + str(args) + '\t' + str(kwargs) + '\n'
+        msg = str(datetime.now()) + '\t' + func.__name__ + \
+            '\t' + str(args) + '\t' + str(kwargs) + '\n'
         with open('51job_log.txt', 'a') as fp:
             fp.write(msg)
         return func(*args, **kwargs)
@@ -134,7 +134,7 @@ def parse_url(url: str, key_type: str, kw: str) -> dict:
         }
 
         save_to_mysql(data_dict)
-        time.sleep(3)
+    time.sleep(5)
 
 
 @log
@@ -151,7 +151,7 @@ def parse_every_page(url: str, key_type: str, kw: str) -> list:
             continue
         data_list += tmp_list
 
-    time.sleep(100)
+    time.sleep(10)
     return data_list
 
 
@@ -165,7 +165,7 @@ def gen_url_list() -> list:
     key_lan_word = ['python', 'java', 'c', 'c++', 'sql', 'go', 'php', 'c#', 'JavaScript', 'perl', '.net', 'objective-c',
                     'MATLAB', 'R', 'assembly', 'swift', 'Delphi']
     key_job_word = ['前端', '后端', '软件开发', 'Android',
-                    'ios', '测试', '运维', 'DBA', '算法', '架构', '运营', '大数据', '数据分析', '机器学习']
+                    'ios', '测试', '运维', 'DBA', '算法', '架构', '运营', '大数据', '数据分析', '机器学习', '游戏制作', '人工智能']
     result_list = []
 
     base_url = 'https://search.51job.com/list/000000,000000,0000,00,9,99,{kw},2,1.html?lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=22&dibiaoid=0&address=&line=&specialarea=00&from=&welfare='
@@ -188,7 +188,6 @@ if __name__ == '__main__':
 
     for url, kw, kw_type in url_list:
         parse_every_page(url, kw_type, kw)
-        time.sleep(300)
 
     # url = 'https://jobs.51job.com/hangzhou-yhq/111952527.html?s=01&t=0'
     # parse_detail_url(url)
