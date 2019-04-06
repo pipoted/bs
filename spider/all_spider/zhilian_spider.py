@@ -67,7 +67,10 @@ def loop_spider(url: str, kw: str, conn):
         print('start this', url)
         content = requests.get(url, headers=headers).content.decode()
         if judge_result_data_exist(content):
-            get_data(url, kw, conn)
+            try:
+                get_data(url, kw, conn)
+            except:
+                continue
             page += 90
         else:
             break

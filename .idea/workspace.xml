@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/all_spider/zhilian_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/all_spider/zhilian_spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.1.txt.swo" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.1.txt.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bole.html.swo" beforeDir="false" />
@@ -41,7 +40,7 @@
     <session id="-1772376280">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />

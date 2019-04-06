@@ -25,24 +25,16 @@ def log(func):
     return inner
 
 
-def save_to_mysql(data) -> None:
+def save_to_mysql(data, conn) -> None:
     """将数据保存在mysql中"""
-    conn = pymysql.connect(
-        host='localhost',
-        user='root',
-        password='xzx199110',
-        database='bs',
-        port=3306,
-    )
     cursor = conn.cursor()
     sql = """
     insert into bs_51job ( kw, job_name, company, city, salary, exp, edu) values (%s, %s, %s, %s, %s, %s, %s)
     """
-    print('start save', data['kw'])
+    print('start save', data['job_name'])
     cursor.execute(sql, ( data['kw'], data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
     conn.commit()
     time.sleep(1)
-    conn.close()
 
 
 def get_total_page(url: str) -> int:
@@ -79,7 +71,6 @@ def parse_detail_url(url) -> tuple:
     :rtype: tuple
     """
     content = requests.get(url).content.decode('gb2312', errors='ignore')
-    time.sleep(1)
     tree = etree.HTML(content)
     data = tree.xpath('//p[@class="msg ltype"]/text()')[1:3]
     exp = data[0].replace('\xa0', ' ').strip()
@@ -91,7 +82,7 @@ def parse_detail_url(url) -> tuple:
     return exp, edu
 
 
-def parse_url(url: str,  kw: str) -> dict:
+def parse_url(url: str,  kw: str, conn) -> dict:
     """
     根据url爬取当前页面所有有用信息
     :param url: 目标url
@@ -128,10 +119,10 @@ def parse_url(url: str,  kw: str) -> dict:
             'edu': edu,
         }
 
-        save_to_mysql(data_dict)
+        save_to_mysql(data_dict, conn)
 
 
-def parse_every_page(url: str, kw: str) -> list:
+def parse_every_page(url: str, kw: str, conn) -> list:
     """
     爬取每一条基础url所有页面的所有数据
     """
@@ -140,7 +131,10 @@ def parse_every_page(url: str, kw: str) -> list:
     for page in range(1, page_num + 1):
         url = re.sub('2,(\d+).html', '2,' + str(page) + '.html', url)
         print('parse url', url)
-        tmp_list = parse_url(url, kw)
+        try:
+            tmp_list = parse_url(url, kw, conn)
+        except:
+            continue
         if tmp_list is None:
             continue
         data_list += tmp_list
@@ -171,10 +165,19 @@ def gen_url_list() -> list:
 
 
 if __name__ == '__main__':
+    conn = pymysql.connect(
+        host='localhost',
+        user='root',
+        password='xzx199110',
+        database='bs',
+        port=3306,
+    )
     url_list = gen_url_list()
 
     for url, kw in url_list:
-        parse_every_page(url, kw)
+        parse_every_page(url, kw, conn)
 
+
+    conn.close()
     # url = 'https://jobs.51job.com/hangzhou-yhq/111952527.html?s=01&t=0'
     # parse_detail_url(url)
