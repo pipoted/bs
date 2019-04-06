@@ -25,7 +25,6 @@ def log(func):
     return inner
 
 
-@log
 def save_to_mysql(data) -> None:
     """将数据保存在mysql中"""
     conn = pymysql.connect(
@@ -37,16 +36,15 @@ def save_to_mysql(data) -> None:
     )
     cursor = conn.cursor()
     sql = """
-    insert into bs_one (web, key_type, kw, job_name, company, city, salary, exp, edu) values (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    insert into bs_51job ( kw, job_name, company, city, salary, exp, edu) values (%s, %s, %s, %s, %s, %s, %s)
     """
-    cursor.execute(sql, (data['web'], data['key_type'], data['kw'],
-                         data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
+    print('start save', data['kw'])
+    cursor.execute(sql, ( data['kw'], data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
     conn.commit()
     time.sleep(1)
     conn.close()
 
 
-@log
 def get_total_page(url: str) -> int:
     """
     根据传入的url判断该条关键字一共有多少页
@@ -56,10 +54,10 @@ def get_total_page(url: str) -> int:
     content = requests.get(url).content.decode('gb2312', errors='ignore')
 
     page_num = re.findall(pattern='共(\d+)页，到第', string=content)[0]
+    time.sleep(1)
     return int(page_num)
 
 
-@log
 def exist_data(url: str) -> bool:
     """
     判断给定url是否存在可以爬取的数据
@@ -73,7 +71,6 @@ def exist_data(url: str) -> bool:
         return False
 
 
-@log
 def parse_detail_url(url) -> tuple:
     """
     爬取详情页中edu与exp信息
@@ -83,22 +80,23 @@ def parse_detail_url(url) -> tuple:
     :rtype: tuple
     """
     content = requests.get(url).content.decode('gb2312', errors='ignore')
+    time.sleep(1)
     tree = etree.HTML(content)
     data = tree.xpath('//p[@class="msg ltype"]/text()')[1:3]
     exp = data[0].replace('\xa0', ' ').strip()
     edu = data[1].replace('\xa0', ' ').strip()
 
+    if '招' in edu:
+        edu = '无要求'
+
     return exp, edu
 
 
-@log
-def parse_url(url: str, key_type: str, kw: str) -> dict:
+def parse_url(url: str,  kw: str) -> dict:
     """
     根据url爬取当前页面所有有用信息
     :param url: 目标url
     :type url: str
-    :param key_type: 传递关键字类型
-    :type key_type: str
     :param job_type: 传递职位类型
     :type job_type: str
     """
@@ -122,8 +120,6 @@ def parse_url(url: str, key_type: str, kw: str) -> dict:
             continue
 
         data_dict = {
-            'web': '51job',
-            'key_type': key_type,
             'kw': kw,
             'job_name': job_name,
             'company': company,
@@ -137,8 +133,7 @@ def parse_url(url: str, key_type: str, kw: str) -> dict:
     time.sleep(5)
 
 
-@log
-def parse_every_page(url: str, key_type: str, kw: str) -> list:
+def parse_every_page(url: str, kw: str) -> list:
     """
     爬取每一条基础url所有页面的所有数据
     """
@@ -146,16 +141,16 @@ def parse_every_page(url: str, key_type: str, kw: str) -> list:
     data_list = []
     for page in range(1, page_num + 1):
         url = re.sub('2,(\d+).html', '2,' + str(page) + '.html', url)
-        tmp_list = parse_url(url, key_type, kw)
+        print('parse url', url)
+        tmp_list = parse_url(url, kw)
         if tmp_list is None:
             continue
         data_list += tmp_list
 
-    time.sleep(10)
+    time.sleep(5)
     return data_list
 
 
-@log
 def gen_url_list() -> list:
     """
     生成需要爬取的url列表
@@ -166,28 +161,23 @@ def gen_url_list() -> list:
                     'MATLAB', 'R', 'assembly', 'swift', 'Delphi']
     key_job_word = ['前端', '后端', '软件开发', 'Android',
                     'ios', '测试', '运维', 'DBA', '算法', '架构', '运营', '大数据', '数据分析', '机器学习', '游戏制作', '人工智能']
+    key_list = key_lan_word + key_job_word
     result_list = []
 
     base_url = 'https://search.51job.com/list/000000,000000,0000,00,9,99,{kw},2,1.html?lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=22&dibiaoid=0&address=&line=&specialarea=00&from=&welfare='
 
-    for kw in key_lan_word:
+    for kw in key_list:
         result_list.append(
-            (base_url.format(kw=kw), kw, 'lan')
+            (base_url.format(kw=kw), kw)
         )
-
-    for kw in key_job_word:
-        result_list.append(
-            (base_url.format(kw=kw), kw, 'job')
-        )
-
     return result_list
 
 
 if __name__ == '__main__':
     url_list = gen_url_list()
 
-    for url, kw, kw_type in url_list:
-        parse_every_page(url, kw_type, kw)
+    for url, kw in url_list:
+        parse_every_page(url, kw)
 
     # url = 'https://jobs.51job.com/hangzhou-yhq/111952527.html?s=01&t=0'
     # parse_detail_url(url)
