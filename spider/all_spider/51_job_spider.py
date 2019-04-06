@@ -54,7 +54,6 @@ def get_total_page(url: str) -> int:
     content = requests.get(url).content.decode('gb2312', errors='ignore')
 
     page_num = re.findall(pattern='共(\d+)页，到第', string=content)[0]
-    time.sleep(1)
     return int(page_num)
 
 
@@ -130,7 +129,6 @@ def parse_url(url: str,  kw: str) -> dict:
         }
 
         save_to_mysql(data_dict)
-    time.sleep(5)
 
 
 def parse_every_page(url: str, kw: str) -> list:
@@ -147,7 +145,6 @@ def parse_every_page(url: str, kw: str) -> list:
             continue
         data_list += tmp_list
 
-    time.sleep(5)
     return data_list
 
 
