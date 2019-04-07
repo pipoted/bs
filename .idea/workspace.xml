@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.1.txt.swo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.1.txt.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bole.html.swo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bole.html.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bolezaixian.csv.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bolezaixian.json.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.bolezaixian.xml.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.mpage.xml.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/bole_spider/.test.xml.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +28,7 @@
     <SUITE FILE_PATH="coverage/bs$51job_test_.coverage" NAME="51job_test. Coverage Results" MODIFIED="1552963905013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/51job_spider" />
     <SUITE FILE_PATH="coverage/bs$bolezaixian.coverage" NAME="bolezaixian Coverage Results" MODIFIED="1554195479823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../scrapy_items/bole_spider/bole_spider/spiders" />
     <SUITE FILE_PATH="coverage/bs$proxy_pool_.coverage" NAME="proxy_pool. Coverage Results" MODIFIED="1552722384137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
+    <SUITE FILE_PATH="coverage/bs$start.coverage" NAME="start Coverage Results" MODIFIED="1554569155849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu" />
     <SUITE FILE_PATH="coverage/bs$zhilian_version_three.coverage" NAME="zhilian_version_three Coverage Results" MODIFIED="1552648834342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/zhilian_spider" />
     <SUITE FILE_PATH="coverage/bs$51_job_spider.coverage" NAME="51_job_spider Coverage Results" MODIFIED="1553708978115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/all_spider" />
   </component>
@@ -48,32 +44,33 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="57899" />
+          <entry key="py" value="58227" />
           <entry key="txt" value="123" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="123" />
-          <entry key="Python" value="57899" />
+          <entry key="Python" value="58227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="57" />
+          <entry key="py" value="62" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="4" />
           <entry key="xml" value="2" />
@@ -84,7 +81,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="57" />
+          <entry key="Python" value="62" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -94,57 +91,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_login.py">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spider/zhilian_spider/zhilian_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spider/all_spider/zhilian_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="483">
+              <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
               <folding>
-                <element signature="e#46#61#0" expanded="true" />
+                <element signature="e#47#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_cookies.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/spiders/csdn_cookies.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="529">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -174,7 +142,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../scrapy_items" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -203,6 +171,9 @@
         <option value="$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_cookies.py" />
         <option value="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/spiders/csdn_cookies.py" />
         <option value="$PROJECT_DIR$/spider/all_spider/zhilian_spider.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" />
       </list>
     </option>
   </component>
@@ -218,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,15 +197,25 @@
               <item name="bs" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="zhilian&#9;null&#9;null&#10;51&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/all_spider/51_job_spider.py&#10;cs&#9;null&#9;null&#10;renren&#9;null&#9;null&#10;ren&#9;null&#9;null&#10;proxy&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/proxy_pool/proxy_pool.py&#10;boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py&#10;jianshu/pip&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jianshu/jianshu/pipelines.py&#10;jianshu_spider&#9;null&#9;null&#10;zhilian&#9;null&#9;null&#10;51&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/all_spider/51_job_spider.py&#10;cs&#9;null&#9;null&#10;renren&#9;null&#9;null&#10;ren&#9;null&#9;null&#10;proxy&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/proxy_pool/proxy_pool.py&#10;boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -258,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bolezaixian">
+  <component name="RunManager" selected="Python.start">
     <configuration name="51_job_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -347,20 +329,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proxy_pool" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="bs" />
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapy_items" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/proxy_pool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/proxy_pool/proxy_pool.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -370,19 +352,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.proxy_pool" />
       <item itemvalue="Python.proxy_poo_version_two" />
       <item itemvalue="Python.51_job_spider" />
       <item itemvalue="Python.boss_spider" />
       <item itemvalue="Python.bolezaixian" />
+      <item itemvalue="Python.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.start" />
         <item itemvalue="Python.bolezaixian" />
         <item itemvalue="Python.boss_spider" />
         <item itemvalue="Python.51_job_spider" />
         <item itemvalue="Python.proxy_poo_version_two" />
-        <item itemvalue="Python.proxy_pool" />
       </list>
     </recent_temporary>
   </component>
@@ -490,9 +472,9 @@
       <window_info id="TODO" order="0" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Terminal" order="1" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.73179615" visible="true" weight="0.24498567" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.73179615" weight="0.24856733" />
       <window_info id="Python Console" order="4" sideWeight="0.38802394" side_tool="true" weight="0.37986112" />
-      <window_info id="Run" order="5" sideWeight="0.87742716" weight="0.35028654" />
+      <window_info id="Run" order="5" sideWeight="0.87742716" visible="true" weight="0.35028654" />
       <window_info id="Structure" order="6" sideWeight="0.12257282" side_tool="true" weight="0.27708334" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3288835" />
@@ -752,62 +734,62 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>139</line>
+          <line>128</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>137</line>
+          <line>126</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>138</line>
+          <line>127</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>172</line>
+          <line>163</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>168</line>
+          <line>159</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>167</line>
+          <line>158</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>178</line>
+          <line>176</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>153</line>
+          <line>144</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>166</line>
+          <line>157</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>179</line>
+          <line>177</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>180</line>
+          <line>178</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/all_spider/51_job_spider.py</url>
-          <line>131</line>
+          <line>121</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -923,35 +905,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spider/zhilian_spider/zhilian_version_two.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/proxy_pool/proxy_pool..py" />
-    <entry file="file://$PROJECT_DIR$/spider/zhilian_spider/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spider/51job_spider/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5732" />
@@ -1173,23 +1126,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/bole_spider/test.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/bole_spider/mpage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="141" column="75" lean-forward="true" selection-start-line="141" selection-start-column="75" selection-end-line="141" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/all_spider/51job_log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/bole_spider/test.xml" />
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/bole_spider/mpage.xml" />
+    <entry file="file://$PROJECT_DIR$/spider/all_spider/51job_log.txt" />
     <entry file="file://$PROJECT_DIR$/spider/all_spider/boss_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1201,9 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,20 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_cookies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/spiders/csdn_cookies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1255,6 +1177,64 @@
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/spiders/csdn_cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/scrapy/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
+          <folding>
+            <element signature="e#47#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
