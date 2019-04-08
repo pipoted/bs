@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../scrapy_items/bole_spider/.idea/bole_spider.iml" filepath="$PROJECT_DIR$/../scrapy_items/bole_spider/.idea/bole_spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bs.iml" filepath="$PROJECT_DIR$/.idea/bs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../da/.idea/da.iml" filepath="$PROJECT_DIR$/../da/.idea/da.iml" />
       <module fileurl="file://$PROJECT_DIR$/../scrapy_items/.idea/scrapy_items.iml" filepath="$PROJECT_DIR$/../scrapy_items/.idea/scrapy_items.iml" />
     </modules>
   </component>

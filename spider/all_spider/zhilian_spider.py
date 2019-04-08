@@ -10,9 +10,11 @@ import pymysql
 
 def save_to_mysql(data: dict, conn):
     cursor = conn.cursor()
-    print('start save', data['job_name'])
+    if '-' in data['city']:
+        data['city'] = re.sub('-.*?$', ' ', data['city']).strip()
+    print('start save', data['job_name'], data['kw'], data['city'])
     sql = '''
-    insert into zhilian_test (kw, job_name, company, city, salary, exp, edu) values (%s,%s,%s,%s,%s,%s,%s)
+    insert into zhilian_job (kw, job_name, company, city, salary, exp, edu) values (%s,%s,%s,%s,%s,%s,%s)
     '''
     cursor.execute(sql, (
     data['kw'], data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
@@ -67,15 +69,16 @@ def loop_spider(url: str, kw: str, conn):
         print('start this', url)
         content = requests.get(url, headers=headers).content.decode()
         try:
-            if judge_result_data_exist(content):
-                try:
-                    get_data(url, kw, conn)
-                except:
-                    continue
-                page += 90
-            else:
-                break
+            flag = judge_result_data_exist(content)
         except:
+            continue
+        if flag:
+            try:
+                get_data(url, kw, conn)
+            except:
+                continue
+            page += 90
+        else:
             break
 
 
@@ -106,6 +109,5 @@ if __name__ == '__main__':
 
     for url, kw in url_list:
         loop_spider(url, kw, conn)
-        time.sleep(5)
 
     conn.close()
