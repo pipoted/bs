@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a900958-2997-4215-91fd-ebf59454d92b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scrapy_items/taobao/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/bs$test.coverage" NAME="test Coverage Results" MODIFIED="1553151327811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bs$lagou_version2.coverage" NAME="lagou_version2 Coverage Results" MODIFIED="1553156603706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/lagou_spider" />
+    <SUITE FILE_PATH="coverage/bs$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1554635802896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../scrapy_items/jd" />
     <SUITE FILE_PATH="coverage/bs$proxy_poo_version_two.coverage" NAME="proxy_poo_version_two Coverage Results" MODIFIED="1553589821699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/proxy_pool" />
     <SUITE FILE_PATH="coverage/bs$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1552708066896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/bs$boss_version_one.coverage" NAME="boss_version_one Coverage Results" MODIFIED="1553160575515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/boss_spider" />
@@ -31,12 +29,13 @@
     <SUITE FILE_PATH="coverage/bs$start.coverage" NAME="start Coverage Results" MODIFIED="1554569155849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu" />
     <SUITE FILE_PATH="coverage/bs$zhilian_version_three.coverage" NAME="zhilian_version_three Coverage Results" MODIFIED="1552648834342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/zhilian_spider" />
     <SUITE FILE_PATH="coverage/bs$51_job_spider.coverage" NAME="51_job_spider Coverage Results" MODIFIED="1553708978115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider/all_spider" />
+    <SUITE FILE_PATH="coverage/bs$start__2_.coverage" NAME="start (2) Coverage Results" MODIFIED="1554700256201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../scrapy_items/taobao" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1772376280">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -45,32 +44,34 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="58227" />
-          <entry key="txt" value="123" />
+          <entry key="html" value="97" />
+          <entry key="py" value="61658" />
+          <entry key="txt" value="135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="123" />
-          <entry key="Python" value="58227" />
+          <entry key="HTML" value="97" />
+          <entry key="PLAIN_TEXT" value="135" />
+          <entry key="Python" value="61658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
+          <entry key="html" value="3" />
           <entry key="jpg" value="1" />
-          <entry key="py" value="62" />
+          <entry key="py" value="73" />
           <entry key="pyi" value="1" />
           <entry key="txt" value="4" />
           <entry key="xml" value="2" />
@@ -78,10 +79,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="62" />
+          <entry key="Python" value="73" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -91,28 +92,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/spiders/taobao_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
+            <state relative-caret-position="492">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
-                <element signature="e#47#60#0" expanded="true" />
+                <element signature="e#24#37#0" expanded="true" />
+                <marker date="1554700173150" expanded="true" signature="365:812" ph="..." />
+                <marker date="1554700173150" expanded="true" signature="838:910" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="377">
+              <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+              <folding>
+                <element signature="e#169#195#0" expanded="true" />
+                <marker date="1554700249082" expanded="true" signature="308:1167" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -134,10 +162,12 @@
       <find>msg_queue</find>
       <find>%s</find>
       <find>print</find>
+      <find>''</find>
     </findStrings>
     <replaceStrings>
       <replace>msg_list</replace>
       <replace>log</replace>
+      <replace>'</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -172,8 +202,15 @@
         <option value="$PROJECT_DIR$/../scrapy_items/CSDN/CSDN/spiders/csdn_cookies.py" />
         <option value="$PROJECT_DIR$/spider/all_spider/zhilian_spider.py" />
         <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py" />
-        <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" />
         <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jd/jd/settings.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jd/start.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/jd/jd/spiders/jd_login.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/taobao/taobao/settings.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/taobao/start.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/taobao/taobao/spiders/taobao_login.py" />
+        <option value="$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py" />
       </list>
     </option>
   </component>
@@ -200,13 +237,20 @@
             <path>
               <item name="bs" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
-              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bs" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
-              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
-              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scrapy_items" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="taobao" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,10 +259,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py&#10;jianshu/pip&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jianshu/jianshu/pipelines.py&#10;jianshu_spider&#9;null&#9;null&#10;zhilian&#9;null&#9;null&#10;51&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/all_spider/51_job_spider.py&#10;cs&#9;null&#9;null&#10;renren&#9;null&#9;null&#10;ren&#9;null&#9;null&#10;proxy&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/proxy_pool/proxy_pool.py&#10;boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="sett&#9;null&#9;null&#10;midd&#9;null&#9;null&#10;taobao/midd&#9;null&#9;null&#10;jd&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jd/jd_login.html&#10;jd_lo&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jd/jd_login.html&#10;jd/sett&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jd/jd/settings.py&#10;jianshu/pip&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/scrapy_items/jianshu/jianshu/pipelines.py&#10;jianshu_spider&#9;null&#9;null&#10;zhilian&#9;null&#9;null&#10;51&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/all_spider/51_job_spider.py&#10;cs&#9;null&#9;null&#10;renren&#9;null&#9;null&#10;ren&#9;null&#9;null&#10;proxy&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/proxy_pool/proxy_pool.py&#10;boss&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/boss_spider/boss_version_one.py&#10;test.py&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/test.py&#10;pro&#9;null&#9;null&#10;lagou&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/lagou_spider/lagou_version2.py&#10;content.html&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/51job_spider/content.html&#10;test&#9;FILE&#9;file:///Users/xiaozhixin/Desktop/bs/spider/zhilian_spider/test.py&#10;zhilia&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -240,29 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.start">
-    <configuration name="51_job_spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="bs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/all_spider" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/all_spider/51_job_spider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.start (2)">
     <configuration name="bolezaixian" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bole_spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,20 +329,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proxy_poo_version_two" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="bs" />
+    <configuration name="start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapy_items" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider/proxy_pool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../scrapy_items/jd" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/proxy_pool/proxy_poo_version_two.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../scrapy_items/jd/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapy_items" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../scrapy_items/taobao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../scrapy_items/taobao/start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -352,19 +396,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.proxy_poo_version_two" />
-      <item itemvalue="Python.51_job_spider" />
       <item itemvalue="Python.boss_spider" />
       <item itemvalue="Python.bolezaixian" />
       <item itemvalue="Python.start" />
+      <item itemvalue="Python.start (1)" />
+      <item itemvalue="Python.start (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.start (2)" />
+        <item itemvalue="Python.start (1)" />
         <item itemvalue="Python.start" />
         <item itemvalue="Python.bolezaixian" />
         <item itemvalue="Python.boss_spider" />
-        <item itemvalue="Python.51_job_spider" />
-        <item itemvalue="Python.proxy_poo_version_two" />
       </list>
     </recent_temporary>
   </component>
@@ -453,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554195463643</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="暂时登录jd">
+      <created>1554632263733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554632263733</updated>
+    </task>
+    <task id="LOCAL-00012" summary="尝试登录淘宝">
+      <created>1554663249169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1554663249171</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -472,9 +530,9 @@
       <window_info id="TODO" order="0" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Terminal" order="1" sideWeight="0.5012285" side_tool="true" weight="0.24242425" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.73179615" weight="0.24856733" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.73179615" weight="0.252149" />
       <window_info id="Python Console" order="4" sideWeight="0.38802394" side_tool="true" weight="0.37986112" />
-      <window_info id="Run" order="5" sideWeight="0.87742716" visible="true" weight="0.35028654" />
+      <window_info active="true" id="Run" order="5" sideWeight="0.87742716" visible="true" weight="0.35028654" />
       <window_info id="Structure" order="6" sideWeight="0.12257282" side_tool="true" weight="0.27708334" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.3288835" />
@@ -507,7 +565,9 @@
     <MESSAGE value="51job 多线程爬取+协程存储" />
     <MESSAGE value="拉钩单线程爬虫实现完成" />
     <MESSAGE value="many page 实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="many page 实现" />
+    <MESSAGE value="暂时登录jd" />
+    <MESSAGE value="尝试登录淘宝" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试登录淘宝" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -877,6 +937,36 @@
           <line>17</line>
           <option name="timeStamp" value="107" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/spiders/taobao_login.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/spiders/taobao_login.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -905,51 +995,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spider/51job_spider/content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5732" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.2_2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/51job_spider/51job_test..py" />
-    <entry file="file://$PROJECT_DIR$/spider/51job_spider/51job_spider_version..py" />
-    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2338">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="445" selection-start-line="445" selection-end-line="445" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2979">
-          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/switch_to.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1307">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="157" column="29" lean-forward="true" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -971,13 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/chrome/options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
         </state>
       </provider>
     </entry>
@@ -1172,13 +1210,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/all_spider/zhilian_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#46#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../scrapy_items/renren/renren/spiders/renren_cookies.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1208,33 +1240,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py">
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/start.py" />
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-7" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jd/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/spiders/jianshu_spider.py">
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jd/jd/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="119" selection-start-line="21" selection-start-column="119" selection-end-line="21" selection-end-column="119" />
-          <folding>
-            <element signature="e#47#60#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../scrapy_items/jianshu/jianshu/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
+        <state relative-caret-position="211">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jd/jd_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14586">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/jd/jd/spiders/jd_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <marker date="1554635800920" expanded="true" signature="1696:1825" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/chrome/options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/spiders/taobao_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1554700173150" expanded="true" signature="365:812" ph="..." />
+            <marker date="1554700173150" expanded="true" signature="838:910" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../scrapy_items/taobao/taobao/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+            <marker date="1554700249082" expanded="true" signature="308:1167" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
