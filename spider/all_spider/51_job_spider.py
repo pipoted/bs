@@ -35,7 +35,7 @@ def save_to_mysql(data, conn) -> None:
     print('start save', data['job_name'])
     cursor.execute(sql, ( data['kw'], data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
     conn.commit()
-    time.sleep(1)
+    time.sleep(0.2)
 
 
 def get_total_page(url: str) -> int:
@@ -149,24 +149,23 @@ def gen_url_list() -> list:
     :return: 将url，关键字类型，关键字，职业类型放入元组中在统一存在列表中
     :rtype: list[tuple(str, str, str, str)]
     """
-    key_lan_word = ['c语言', 'c++', 'sql', 'go', 'php', 'c#', 'JavaScript', 'perl', '.net', 'objective-c',
+    key_lan_word = ['c＃', 'JavaScript', 'perl', '.net', 'objective－c',
                     'MATLAB', 'R', 'assembly', 'swift', 'Delphi']
+                    # java, python, c语言, c++，　ｓｑｌ，ｇｏ，ｐｈｐ
     key_job_word = ['前端', '后端', '软件开发', 'Android',
                     'ios', '测试', '运维', 'DBA', '算法', '架构', '运营', '大数据', '数据分析', '机器学习', '游戏制作', '人工智能']
     key_list = key_lan_word + key_job_word
     new_list = []
     for key in key_list:
         new_list.append(parse.quote(key))
-    key_list = new_list
-    del new_list
 
     result_list = []
 
     base_url = 'https://search.51job.com/list/000000,000000,0000,00,9,99,{kw},2,1.html?lang=c&stype=1&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=22&dibiaoid=0&address=&line=&specialarea=00&from=&welfare='
 
-    for kw in key_list:
+    for kw, kw_t in zip(new_list, key_list):
         result_list.append(
-            (base_url.format(kw=kw), kw)
+            (base_url.format(kw=kw), kw_t)
         )
     return result_list
 
