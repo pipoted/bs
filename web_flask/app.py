@@ -26,8 +26,7 @@ def get_data(kw):
     new_list = []
 
     for data in data_list:
-        if '异地' not in data[0]:
-            new_list.append([data[0].replace(' ', ''), data[1]])
+        new_list.append([data[0].replace(' ', ''), data[1]])
 
     finally_list = []
     city_list = []
