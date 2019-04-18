@@ -35,7 +35,7 @@ def save_to_mysql(data, conn) -> None:
     print('start save', data['job_name'])
     cursor.execute(sql, ( data['kw'], data['job_name'], data['company'], data['city'], data['salary'], data['exp'], data['edu']))
     conn.commit()
-    time.sleep(0.1)
+    time.sleep(0.05)
 
 
 def get_total_page(url: str) -> int:
@@ -149,11 +149,10 @@ def gen_url_list() -> list:
     :return: 将url，关键字类型，关键字，职业类型放入元组中在统一存在列表中
     :rtype: list[tuple(str, str, str, str)]
     """
-    key_lan_word = ['c＃', 'JavaScript', 'perl', '．net', 'objective－c',
-                    'MATLAB', 'R', 'assembly', 'swift', 'Delphi']
-                    # java, python, c语言, c++，　ｓｑｌ，ｇｏ，ｐｈｐ
-    key_job_word = ['前端', '后端', '软件开发', 'Android',
-                    'ios', '测试', '运维', 'DBA', '算法', '架构', '运营', '大数据', '数据分析', '机器学习', '游戏制作', '人工智能']
+    key_lan_word = []
+                    # java, python, c语言, c++，　ｓｑｌ，ｇｏ，ｐｈｐ,'c＃', 'JavaScript', 'perl', '．net', 'objective－c', 'MATLAB', 'R', 'assembly', 'swift', 'Delphi'
+    key_job_word = ['运营', '大数据', '数据分析', '机器学习', '游戏制作', '人工智能']
+                    # '前端', '后端', '软件开发', 'Android', 'ios', '测试', '运维', 'DBA', '算法', '架构',
     key_list = key_lan_word + key_job_word
     new_list = []
     for key in key_list:

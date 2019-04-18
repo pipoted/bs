@@ -53,6 +53,12 @@ class Data:
                              '机器学习', '游戏制作', '人工智能']
         self._city_name_list = []
 
+    def all_lan_list(self):
+        return self._list_of_lan
+
+    def all_job_list(self):
+        return self._list_of_job
+
     def __del__(self):
         """
         在删除对象的同时关闭数据对象
@@ -207,18 +213,57 @@ class Data:
         查询职位数量前五的城市
         :return: 包含城市名称的列表
         """
-        return [data[0] for data in self.get_all_city_msg()[:5]]
+        return [data[0] for data in self.get_all_city_msg()[:20]]
 
     def top5_lan_name(self) -> List[str]:
         """
         查询数量排名前五的语言
         :return: 包含语言名称的列表
         """
-        return [data[0] for data in self.get_all_lan_msg()[:5]]
+        return [data[0] for data in self.get_all_lan_msg()]
 
     def top5_job_name(self) -> List[str]:
         """
         查询熟练排名前五的职位
         :return: 包含职位名称的列表
         """
-        return [data[0] for data in self.get_all_job_msg()[:5]]
+        return [data[0] for data in self.get_all_job_msg()]
+
+    def get_city_num(self, kw: str) -> int:
+        """
+        根据给定的关键字返回统计的数据总数
+        """
+        city_list = self.get_the_kw_msg(lan_name=kw)  # type: List[Tuple[str, int]]
+        num = 0
+        for i in [z[1] for z in city_list]:
+            num += i
+
+        return num
+
+    def get_kw_num(self, city: str) -> int:
+        kw_list = self.get_the_city_msg(city_name=city)  # type: List[Tuple[str, int]]
+        num = 0
+        for i in [z[1] for z in kw_list]:
+            num += i
+
+        return num
+
+    def get_all_num(self) -> int:
+        data_list = self.get_all_city_msg()  # type: List[Tuple[str, int]]
+        num = 0
+        for i in [z[1] for z in data_list]:
+            num += i
+
+        return num
+
+    def get_lan_job_num(self, city: str) -> Tuple[int, int]:
+        lan_list, job_list = self.get_kw_msg_of_city(city_name=city)
+        lan_num, job_num = 0, 0
+
+        for i in [z[1] for z in lan_list]:
+            lan_num += i
+
+        for j in [x[1] for x in job_list]:
+            job_num += j
+
+        return lan_num, job_num

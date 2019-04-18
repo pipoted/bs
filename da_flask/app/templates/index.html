@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+    <article class="markdown-body ">
+        <h1>项目说明</h1>
+        <h2>关于项目</h2>
+        <p>本项目的目的是爬取互联网相关职位信息并可视化，对城市-语言-职位之间的数量关系进行分析，可以给求职者一个大致的参考目标。</p>
+        <p>目前只爬取51job作为数据来源，智联招聘，boss直聘与拉钩作为备用选项，参考51job与智联招聘的信息比较多而且全，在以数量关系进行分析的前提下，整体来说更加具有参考性。</p>
+
+        <h2>使用须知</h2>
+        <p>
+        <ul>
+            <li>本项目目前为止只对城市-语言-职位之间的数量关系进行可视化分析，但是由于各种原因，得到的数量结果是有误差的，因此，目前为止，本网站提供的所有数据仅仅在数量级关系是比较可靠。</li>
+            <ol>其中，误差原因有：
+                <li>指定职位需求人数没有进行爬取，可能一个招聘信息中可能需求复数人数。</li>
+                <li>由于部分公司内部机制问题，可能为了招聘一个职位而通过不同的人发布相同的招聘信息现象。</li>
+                <li>由于某些原因，在发布招聘信息时对信息内容填写不当，没有填写所在城市，在网页中显示为‘异地招聘’,这个数据在可视化时没有参考价值，因此在数据清理时被除去了。</li>
+                <li>
+                    有一些对职业技能要求不强烈的职业，在为了让更多的求职者看到，填写招聘信息时会尽可能多的填写需求，因此在进行关键字搜索的时候，即便有些职业主观并不希望出现在这个词条搜索的内容之中，但是它还是出现了，有些搜索结果甚至都不是互联网相关职业。
+                </li>
+                <li></li>
+            </ol>
+        </ul>
+        </p>
+    </article>
+    <div class="markdown-body">
+        <h1>介绍 top 10</h1>
+        <p>page test</p>
+        <hr/>
+        {{ top_10_city_map_page|safe }}
+        <hr/>
+        {{ top_10_city|safe }}
+
+        <br/>
+        <h1>介绍 top 100</h1>
+        <p>page test</p>
+        <hr/>
+        {{ top_100_city_map_page|safe }}
+        <hr/>
+        {{ top_100_city_page|safe }}
+
+        <br/>
+        <h1>介绍 lan</h1>
+        <p>page test</p>
+        <hr/>
+        {{ lan_page|safe }}
+
+        <br/>
+        <h1>介绍 job</h1>
+        <p>page test</p>
+        <hr/>
+        {{ job_page|safe }}
+
+    </div>
+    <footer class="container-fluid foot-wrap">
+        <p align="center" style="margin-top: 20px;color:#878B91;">
+            Copyright &copy; 2019 xiaozhixin
+        </p>
+    </footer>
+{% endblock %}

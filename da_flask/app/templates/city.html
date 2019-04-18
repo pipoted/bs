@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}互联网职业分析 - {{ title }}{% endblock %}
+
+
+{% block content %}
+    <article class = "markdown-body ">
+        <h1>{{ title }}总览</h1>
+        <h2>关于{{ title }}</h2>
+        <p>本项目的目的是爬取互联网相关职位信息并可视化，给求职者一个参考方向。</p>
+        <p>目前只爬取51job与智联网作为数据来源，boss直聘与拉钩作为备用选项，参考51job与智联招聘的信息比较多而且全，整体来说更加具有参考性。</p>
+    </article>
+    <div class = "markdown-body">
+        <h1>介绍 wo</h1>
+        <p>page test</p>
+        <hr/>
+        {{ kw_bar_page|safe }}
+
+        <h1>介绍 lan</h1>
+        <p>page test</p>
+        <hr/>
+        {{ lan_bar_page|safe }}
+        <hr/>
+        {{ lan_pie_page|safe }}
+
+        <h1>介绍 job</h1>
+        <p>page test</p>
+        <hr/>
+        {{ job_bar_page|safe }}
+        <hr/>
+        {{ job_pie_page|safe }}
+
+    </div>
+    <footer class = "container-fluid foot-wrap">
+        <p align = "center" style = "margin-top: 20px;color:#878B91;">
+            Copyright &copy; 2019 xiaozhixin
+        </p>
+    </footer>
+{% endblock %}
